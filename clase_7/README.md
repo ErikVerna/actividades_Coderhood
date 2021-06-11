@@ -1,3 +1,3 @@
 # Actividades CoderHood
 
-Estructuras de Datos
+Manejo de Errores
