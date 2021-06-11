@@ -29,10 +29,10 @@ let datosPersonales = obtenerDatosPersonales()
 
 //imprimir los datos obtenidos
 
-console.log(datosPersonales);
+console.log(datosPersonales + "\n");
 
 //TO_DO: Imprimir la profesion de la persona y
-console.log(datosPersonales.profesion)
+console.log("La profesion de la persona es: " + datosPersonales.profesion + "\n");
 // ------------------------------------------------------
 datosPersonales.procesado = true
 

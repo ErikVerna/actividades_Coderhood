@@ -1,5 +1,5 @@
 /* Player 1 */
-// Modificar valores de las "var" para verificar el programa
+// Modificar valores de los "let" para verificar el programa
 let vida = 0; // Variable de la vida
 let pocionesDeVida = 1; // Variable de pociones
 

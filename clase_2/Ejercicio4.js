@@ -14,11 +14,11 @@
 // En feriados: porcentajeParaSueldos es del 80% de gananciaDelDia mientras que en
 // dias normales, es del 65%
 
-var repartidores = 6; // Cantidad de repartidores
-var esFeriado = false; // si es feriado true, false si no es
-var gananciaDelDia = 15000;
-var porcentajeParasueldos;
-var dia = "feriado"; // declaro var de string
+let repartidores = 6; // Cantidad de repartidores
+let esFeriado = false; // si es feriado true, false si no es
+let gananciaDelDia = 15000;
+let porcentajeParasueldos;
+let dia = "feriado"; // declaro let de string
 
 if (esFeriado) {
   porcentajeParasueldos = gananciaDelDia * 0.8;
@@ -27,8 +27,8 @@ if (esFeriado) {
   dia = "Normal";
 }
 
-var sueldoNetoDeRepartidor = porcentajeParasueldos / repartidores; // van despues del if-else porque porcentajeParasueldos NO ESTA DETERMINADA
-var gananciaDelComercioFinal = gananciaDelDia - porcentajeParasueldos;
+let sueldoNetoDeRepartidor = porcentajeParasueldos / repartidores; // van despues del if-else porque porcentajeParasueldos NO ESTA DETERMINADA
+let gananciaDelComercioFinal = gananciaDelDia - porcentajeParasueldos;
 
 console.log("Sueldo de Repartidores en dia" + " " + dia + " es de: $" + sueldoNetoDeRepartidor);
 console.log("La ganancia del local del dia es de: " + "$" + gananciaDelDia)
