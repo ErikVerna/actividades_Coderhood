@@ -33,16 +33,16 @@
 //--------------------------------------------------------------------
 // .filter (sub-array que contenga solo los elementos que cumplan una condición)
 
-const arr1= [11, 2, 4, 20, 4, 10, 99 , 1, 3]
+// const arr1= [11, 2, 4, 20, 4, 10, 99 , 1, 3]
 
-function elementoMayorADiez(element) {
-    return element > 10
-}
+// function elementoMayorADiez(element) {
+//     return element > 10
+// }
 
-const arr2= arr1.filter(elementoMayorADiez)
+// const arr2= arr1.filter(elementoMayorADiez)
 
-console.log(arr1)
-console.log(arr2)
+// console.log(arr1)
+// console.log(arr2)
 
 //-------------------------------------------------------------------
 // .find (buscar un elemento en un array)
@@ -107,15 +107,15 @@ console.log(arr2)
 //----------------------------------------------------------------
 // .reduce (un unico resultado para procesar todos los elementos)
 
-// const arr1 = [10, 2, 6, 8, 3]
+const arr1 = [10, 2, 6, 8, 3]
 
-// function sumarElementos(sumaAcumulada, elemento) {
-//     return sumaAcumulada + elemento
-// }
+function sumarElementos(sumaAcumulada, elemento) {
+    return sumaAcumulada + elemento
+}
 
-// const suma = arr1.reduce(sumarElementos, 0)
+const suma = arr1.reduce(sumarElementos, 0)
 
-// console.log(suma)
+console.log(suma)
 
 //----------------------------------------------------
 // Encadenar métodos
@@ -218,3 +218,12 @@ const numeros = [5, 3, 7, 4, 8, 1]
 
 
 console.log(Math.max(...numeros))
+
+// Arrow Function
+
+// let saludar = (nombre) => {
+//     console.log ("Hola " + nombre + "!")
+// }
+// saludar("Jose")
+// saludar("Pepe")
+// saludar("Pipo")
