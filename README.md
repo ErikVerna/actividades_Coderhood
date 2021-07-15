@@ -1,3 +1,3 @@
 # Actividades CoderHood
 
-Asincronismo
+Ejercicios Practicos para Desarrolador Full Stack
