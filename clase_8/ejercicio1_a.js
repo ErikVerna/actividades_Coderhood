@@ -22,5 +22,4 @@ function fallo(falla){
 }
 
 const resultadoFinal = dividirNumeros(8,2)
-
 resultadoFinal.then(exitosa).catch(fallo)
