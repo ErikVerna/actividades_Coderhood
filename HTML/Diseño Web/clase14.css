@@ -1,0 +1,212 @@
+/* Comentario en CSS ;) */
+
+body{
+    overflow-x: hidden;
+    padding: 3px 35px 3px 50px;
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+#header {
+    display: flex;
+    z-index: 20;
+    position: sticky;
+    background-color:#7F1D1D;
+    margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+#title {
+    margin-left: 30px;
+}
+
+#lista {
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#hero{
+    height: 20vh;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Bienvenido {
+    display:block;
+    width: 600px;
+}
+
+#imagen {
+    position: sticky;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #7F1D1D
+}
+
+#section-1{
+    height: 15vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#sumate {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#discord {
+    padding: 5px;
+    background-color: #7F1D1D;
+    color: black;
+    border-radius: 15%;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#section-2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://media.redadn.es/imagenes/metal-gear-solid-v-the-phantom-pain-playstation-3_261338_pn2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+    height: 80vh;
+}
+
+#caja-negra {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50vh;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    height: 40px;
+    background-color: #7F1D1D
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    overflow: hidden;   
+    position: relative;
+}
+
+.bottom-header {
+    margin-left: 30px;
+}
+
+.card .background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card .content {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(32,32,32,0.3);
+    width: 100%;
+    backdrop-filter: saturate(100%) blur(5px);
+    padding: 20px;
+}
+.img-card {
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card h3 {
+    color: white;
+}
+
+.card p {
+    color: white;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 550px) {
+    #Bienvenido{
+        justify-content: center;
+        text-align: center;
+    }
+    #header{
+        justify-content: center;
+        padding: 0px;
+        width: 100%;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #section-1{
+        padding: 0px;
+        justify-content: center;
+    }
+
+    #section-2{
+        padding: 0px;
+        justify-content: center;
+    }
+    #hero{
+        flex-direction: column;
+    }
+    #imagen{
+        min-width: 150px;
+        width: 250px;
+        height: 100%;
+    }
+    #footer p{
+        justify-content: center;
+        padding: 0px;
+        height: 100%;
+        font-size: small;
+    }
+}
