@@ -37,7 +37,7 @@ body{
 }
 
 #hero{
-    height: 20vh;
+    height: 30vh;
     padding: 40px;
     display: flex;
     justify-content: space-between;
@@ -119,14 +119,19 @@ footer {
 }
 
 .blog-container {
+    margin: 0px;
+    margin-left: 50px;
+    height: 50vh;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .card {
     margin: 20px;
-    width: 300px;
+    width: 500px;
     height: 300px;
     border-radius: 20px;
     background-color: white;
@@ -134,10 +139,15 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.3);
     overflow: hidden;   
     position: relative;
+    display: flex;
+    align-items: space-around;
 }
 
 .bottom-header {
-    margin-left: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
 }
 
 .card .background {
@@ -151,16 +161,10 @@ footer {
     bottom: 0px;
     background-color: rgba(32,32,32,0.3);
     width: 100%;
-    backdrop-filter: saturate(100%) blur(5px);
-    padding: 20px;
+    backdrop-filter: saturate(100%) blur(4px);
+    padding: 15px;
 }
-.img-card {
-    object-fit: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
+
 
 .card h3 {
     color: white;
@@ -168,9 +172,45 @@ footer {
 
 .card p {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 
+.content p {
+    display: flex;
+    align-items: center;
+}
+
+#img-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: center;
+    height: 300px;
+    width: auto;
+}   
+
+#title:hover{
+    transition: color .5s;
+    color: black;
+    transition: all 5.5s ease-in-out;
+}
+
+#discord:hover{
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s 
+}
+
+.content h3:hover{
+    color:#7F1D1D;
+}
+
+/* Responsive */
 @media only screen and (max-width: 550px) {
     #Bienvenido{
         justify-content: center;
