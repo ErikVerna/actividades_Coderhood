@@ -1,3 +1,5 @@
-# Actividades CoderHood
+## Actividades CoderHood 🧑‍💻
 
-Ejercicios Practicos para Desarrolador Full Stack
+- Ejercicios Practicos para Desarrollador Full Stack
+
+
